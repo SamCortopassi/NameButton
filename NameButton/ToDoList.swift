@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ToDoList: NSObject {
-    private var items: [String] = []
+class TodoList: NSObject {
+    fileprivate var items: [String] = []
     
     func add(_ item: String) {
         items.append(item)
@@ -17,7 +17,7 @@ class ToDoList: NSObject {
 
 }
 
-extension ToDoList: UITableViewDataSource {
+extension TodoList: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
