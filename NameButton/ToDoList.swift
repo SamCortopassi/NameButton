@@ -13,6 +13,8 @@ class TodoList: NSObject {
     
     func add(_ item: String) {
         items.append(item)
+        print(item.count)
+        items[0] += ", what's up?"
     }
 
 }
